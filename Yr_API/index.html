@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="myscript.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title> yr - api </title>
+</head>
+<body>
+    <div id="page-container">
+        <div id="content-wrap">
+            <header> 
+                <h1> sende en request til yr - api om været </h1>
+            </header>
+            <main>
+                
+                <form action="/url" method="GET">
+                    <p>legg til latitude og longitude:</p>
+                    <input type="text" id="myLat" placeholder="65.09">
+                    <input type="text" id="myLon" placeholder="10.90">
+                    <button id="button3" type="button" onclick="sendRequest(-999,-999);">Finn sted/vær</button>
+                </form>
+
+                <button id="button" type="button" onclick="sendRequest(59.9, 10.9 );">Drømtorp</button>
+                <button id="button" type="button" onclick="sendRequest(59.9, 10.7 );">drøbak</button>
+                
+                <p id="temprature"> tempraturen er: </p>
+                <p id="TotalSkydekke"> skydekke er: </p>
+                <p id="Vindhastighet"> Vind hastigheten er: </p>
+                <p id="WindDirection"> vind retning er: </p>
+
+            </main>
+            <footer>
+                <p id="takk"> takk for et du kjekker været hos oss </p>
+            </footer>
+        </div>    
+
+    </div>
+</body>
+</html>
